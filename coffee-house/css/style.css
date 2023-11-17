@@ -185,8 +185,8 @@ html {
 }
 .welcome-button:hover .welcome-button__icon {
   opacity: 1;
-  transform: translateX(-55%);
+  transform: translateX(-70%);
 }
 .welcome-button:hover .welcome-button__text {
-  transform: translateX(-25%);
+  transform: translateX(-30%);
 }
