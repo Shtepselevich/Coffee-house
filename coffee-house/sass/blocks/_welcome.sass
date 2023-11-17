@@ -1,0 +1,63 @@
+.welcome
+    width: 1360px
+    height: 644px
+    background-image: url(../image/welcome.jpeg)
+    background-position: center
+    background-size: cover
+    border-radius: 40px
+    display: block
+    align-items: center
+    flex-direction: column
+    padding: 100px
+    &-title
+        width: 530px
+        color: #E1D4C9
+        font-family: Inter
+        font-size: 72px
+        font-style: normal
+        font-weight: 600
+        line-height: 105%
+        margin-left: 0
+        margin-bottom: 40px
+        &__enjoy
+            color: #B0907A
+            font-style: italic
+    &-text
+        display: inline-block
+        width: 530px
+        color: #E1D4C9
+        font-family: Inter
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 150%
+    &-button
+        display: flex
+        width: 200px
+        padding: 20px 78px
+        align-items: center
+        border-radius: 100px
+        border: none
+        background: #E1D4C9
+        margin-left: 0
+        margin-top: 40px
+        cursor: pointer
+        &__text
+            color: #403F3D
+            text-align: center
+            font-family: Inter
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150%
+            margin-right: 8px
+            transition: 0.3s ease-in-out
+        &__icon
+            opacity: 0
+            transition: 0.3s ease-in-out
+
+        &:hover .welcome-button__icon
+            opacity: 1
+            transform: translateX(-55%)
+        &:hover .welcome-button__text
+            transform: translateX(-25%)
