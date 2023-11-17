@@ -1,0 +1,77 @@
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 20px
+    padding-left: 40px
+    padding-right: 40px
+    &-icon
+        margin-left: 0
+        margin-right: 366px
+        &__logo
+            width: 100px
+            height: 60px
+    &-menu
+        margin-right: 0
+    &-button
+        border: none
+        background-color: #E1D4C9
+        margin-right: 0
+        cursor: pointer
+        &::after
+            display: block
+            content: ""
+            width: 95%
+            margin-left: 2.5%
+            height: 2px
+            background-color: #403F3D
+            transform: scaleX(0)
+            transform-origin: center
+            transition: 0.4s ease-in-out
+        &:hover::after
+            transform: scaleX(1)
+            width: 95%
+            margin-left: 2.5%
+            transition: 0.4s ease-in-out
+        &__text
+            color: #403F3D
+            vertical-align: top
+            font-family: Inter
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150%
+        &__icon
+            margin-left: 8px
+.navbar
+    margin-left: 0
+    &-menu
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        list-style-type: none
+        &__link
+            color: #403F3D
+            font-feature-settings: 'clig' off, 'liga' off
+            font-family: Inter
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150%
+            text-decoration: none
+            &::after
+                display: block
+                content: ""
+                width: 95%
+                margin-left: 3%
+                height: 2px
+                background-color: #403F3DCC
+                transform: scaleX(0)
+                transition: 0.4s ease-in-out
+            &:hover::after
+                width: 95%
+                margin-left: 3%
+                transform: scaleX(1)
+                transition: 0.4s ease-in-out
+        &__item
+            margin-right: 40px
