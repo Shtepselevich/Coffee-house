@@ -106,7 +106,7 @@ html {
   width: 95%;
   margin-left: 3%;
   height: 2px;
-  background-color: rgba(64, 63, 61, 0.8);
+  background-color: #403F3D;
   transform: scaleX(0);
   transition: 0.4s ease-in-out;
 }
@@ -437,6 +437,16 @@ html {
   border: 1px solid #665F55;
   background-color: #E1D4C9;
   margin-right: 20px;
+  cursor: pointer;
+}
+.download-button:hover {
+  background-color: #665F55;
+}
+.download-button:hover .download-button__img path {
+  fill: #E1D4C9;
+}
+.download-button:hover .download-button__info p {
+  color: #E1D4C9;
 }
 .download-button__img {
   margin-left: 0;
