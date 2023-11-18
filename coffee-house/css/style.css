@@ -131,6 +131,7 @@ html {
   align-items: center;
   flex-direction: column;
   padding: 100px;
+  margin-bottom: 100px;
 }
 .welcome-title {
   width: 530px;
@@ -190,4 +191,116 @@ html {
 }
 .welcome-button:hover .welcome-button__text {
   transform: translateX(-30%);
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.slider-title {
+  color: #403F3D;
+  text-align: center;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+.slider-title__favorite {
+  font-style: italic;
+  color: #B0907A;
+}
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.slider-button {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 1px solid #665F55;
+  background-color: #E1D4C9;
+  cursor: pointer;
+}
+.slider-button:hover {
+  background-color: #665F55;
+}
+.slider-button__prev {
+  margin-left: 0;
+}
+.slider-button__next {
+  margin-right: 0;
+}
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider-content__img {
+  width: 480px;
+  height: 480px;
+  margin-bottom: 20px;
+}
+.slider-content__title {
+  color: #403F3D;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+.slider-content__info {
+  color: #403F3D;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 480px;
+  margin-bottom: 16px;
+}
+.slider-content__price {
+  color: #403F3D;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+.slider-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+.slider-pagination__button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 4px;
+}
+.slider-pagination__button.active span {
+  background: #665F55;
+}
+.slider-pagination__item {
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+  background: #C1B6AD;
+  border-color: #C1B6AD;
 }

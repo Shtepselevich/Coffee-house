@@ -29,7 +29,7 @@
         </div>
     </header>
     <main class="main">
-        <div class="welcome">
+        <section class="welcome">
             <h1 class="welcome-title"><span class="welcome-title__enjoy">Enjoy</span> premium coffee at our charming
                 cafe</h1>
             <p class="welcome-text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource
@@ -37,8 +37,28 @@
                 favorite beverage.</p>
             <button class="welcome-button"><span class="welcome-button__text">Menu</span><img src="image/coffee-cup.svg"
                     alt="Cup" class="welcome-button__icon"></button>
-        </div>
-
+        </section>
+        <section class="slider">
+            <h1 class="slider-title">Choose your <span class="slider-title__favorite">favorite</span> coffee</h1>
+            <div class="slider-wrapper">
+                <button class="slider-button slider-button__prev"><img src="image/arrow-left.svg" alt="Prev"
+                        class="slider-button__arrow"></button>
+                <div class="slider-content"><img src="image/slider/coffee-slider-1.png" alt="Coffee"
+                        class="slider-content__img">
+                    <h3 class="slider-content__title">S’mores Frappuccino</h3>
+                    <span class="slider-content__info">This new drink takes an espresso and mixes it with brown sugar
+                        and cinnamon before being topped with oat milk.</span>
+                    <span class="slider-content__price">$5.50</span>
+                </div>
+                <button class="slider-button slider-button__next"><img src="image/arrow-right.svg" alt="Next"
+                        class="slider-button__arrow"></button>
+            </div>
+            <div class="slider-pagination">
+                <button class="slider-pagination__button active"><span class="slider-pagination__item"></span></button>
+                <button class="slider-pagination__button"><span class="slider-pagination__item"></span></button>
+                <button class="slider-pagination__button"><span class="slider-pagination__item"></span></button>
+            </div>
+        </section>
     </main>
 </body>
 
