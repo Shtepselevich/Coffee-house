@@ -378,3 +378,90 @@ html {
 .about-box__img4 {
   margin-top: -35px;
 }
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.download-left {
+  margin-left: 0;
+  width: 630px;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.download-right {
+  width: 630px;
+  height: 630px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download-title {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+.download-download {
+  color: #B0907A;
+  font-style: italic;
+}
+.download-text {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+.download-buttons {
+  display: flex;
+  margin-left: 0;
+}
+.download-button {
+  display: flex;
+  width: 200px;
+  padding: 12px 20px;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #665F55;
+  background-color: #E1D4C9;
+  margin-right: 20px;
+}
+.download-button__img {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.download-button__info {
+  margin-left: 0;
+}
+.download-button__text {
+  color: #403F3D;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: left;
+  margin-bottom: 2px;
+}
+.download-button__app {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: left;
+}
