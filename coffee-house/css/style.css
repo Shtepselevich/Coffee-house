@@ -304,3 +304,52 @@ html {
   background: #C1B6AD;
   border-color: #C1B6AD;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-title {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 59.5px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+.about-title__perfect {
+  color: #B0907A;
+  font-style: italic;
+}
+.about-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 1060px;
+  width: 1360px;
+  margin-left: 0;
+}
+.about-box__wrapper {
+  overflow: hidden;
+}
+.about-box__wrapper1 {
+  width: 660px;
+  height: 590px;
+}
+.about-box__wrapper2 {
+  width: 660px;
+  height: 430px;
+}
+.about-box__wrapper3 {
+  width: 660px;
+  height: 430px;
+}
+.about-box__wrapper4 {
+  width: 660px;
+  height: 590px;
+}
+.about-box__img {
+  object-fit: cover;
+  transform: translate(-10px, -30px);
+}
