@@ -103,6 +103,7 @@ html {
   align-items: center;
   justify-content: flex-start;
   list-style-type: none;
+  gap: 40px;
 }
 .navbar-menu__link {
   color: #403F3D;
@@ -129,9 +130,6 @@ html {
   margin-left: 3%;
   transform: scaleX(1);
   transition: 0.4s ease-in-out;
-}
-.navbar-menu__item {
-  margin-right: 40px;
 }
 
 .welcome {
@@ -160,7 +158,7 @@ html {
 }
 .welcome-title__enjoy {
   color: #B0907A;
-  font-variation-settings: "slnt" -10;
+  font-style: italic;
 }
 .welcome-text {
   display: inline-block;
@@ -224,7 +222,7 @@ html {
   margin-bottom: 40px;
 }
 .slider-title__favorite {
-  font-variation-settings: "slnt" -10;
+  font-style: italic;
   color: #B0907A;
 }
 .slider-wrapper {
@@ -343,7 +341,7 @@ html {
 }
 .about-title__perfect {
   color: #B0907A;
-  font-variation-settings: "slnt" -10;
+  font-style: italic;
 }
 .about-box {
   display: flex;
@@ -434,7 +432,7 @@ html {
 }
 .download-download {
   color: #B0907A;
-  font-variation-settings: "slnt" -10;
+  font-style: italic;
 }
 .download-text {
   color: #403F3D;
@@ -527,7 +525,7 @@ html {
   margin-bottom: 40px;
 }
 .footer-left__its {
-  font-variation-settings: "slnt" -10;
+  font-style: italic;
   color: #B0907A;
 }
 .footer-social {
@@ -623,6 +621,11 @@ html {
   margin-left: 8px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .menu-title {
   width: 800px;
   color: #403F3D;
@@ -632,8 +635,54 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
+  margin-bottom: 40px;
 }
 .menu-amazing {
-  font-variation-settings: "slnt" -10;
+  font-style: italic;
   color: #B0907A;
+}
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 16px;
+}
+.menu-button {
+  display: flex;
+  padding: 8px 16px 8px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #C1B6AD;
+  background-color: #E1D4C9;
+}
+.menu-button.active {
+  border: 1px solid #665F55;
+  background-color: #665F55;
+}
+.menu-button.active .menu-button__circle {
+  background-color: #E1D4C9;
+}
+.menu-button.active span {
+  color: #E1D4C9;
+}
+.menu-button__text {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.menu-button__circle {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  padding: 3px 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #C1B6AD;
+  margin-right: 8px;
 }
