@@ -686,3 +686,65 @@ html {
   background: #C1B6AD;
   margin-right: 8px;
 }
+
+.card {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.card-wrapper {
+  display: flex;
+  height: 506px;
+  width: 310px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid #C1B6AD;
+}
+.card-container {
+  width: 310px;
+  height: 310px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.card-container__img {
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+.card-container__img:hover {
+  transform: scale(1);
+}
+.card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  gap: 12px;
+}
+.card-info__title {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-left: 0;
+}
+.card-info__text {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.card-info__price {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-left: 0;
+}
