@@ -760,3 +760,17 @@ html {
   flex-wrap: wrap;
   margin-bottom: 100px;
 }
+.menu-tea {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.menu-desert {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
