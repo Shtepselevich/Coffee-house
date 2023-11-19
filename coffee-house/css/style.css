@@ -719,8 +719,9 @@ html {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 0;
-  gap: 12px;
+  height: 196px;
 }
 .card-info__title {
   color: #403F3D;
@@ -730,6 +731,7 @@ html {
   font-weight: 600;
   line-height: 125%;
   margin-left: 0;
+  margin-bottom: 12px;
 }
 .card-info__text {
   color: #403F3D;
@@ -738,6 +740,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  margin-bottom: auto;
 }
 .card-info__price {
   color: #403F3D;
@@ -747,4 +750,13 @@ html {
   font-weight: 600;
   line-height: 125%;
   margin-left: 0;
+  margin-bottom: 0;
+}
+
+.menu-coffee {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
