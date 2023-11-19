@@ -438,6 +438,7 @@ html {
   background-color: #E1D4C9;
   margin-right: 20px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .download-button:hover {
   background-color: #665F55;
@@ -452,6 +453,9 @@ html {
   margin-left: 0;
   margin-right: 8px;
 }
+.download-button__img path {
+  transition: 0.3s ease-in-out;
+}
 .download-button__info {
   margin-left: 0;
 }
@@ -465,6 +469,7 @@ html {
   line-height: 140%;
   text-align: left;
   margin-bottom: 2px;
+  transition: 0.3s ease-in-out;
 }
 .download-button__app {
   color: #403F3D;
@@ -474,4 +479,53 @@ html {
   font-weight: 600;
   line-height: 150%;
   text-align: left;
+  transition: 0.3s ease-in-out;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 450px;
+  border-radius: 40px;
+  background: #665F55;
+  padding: 100px;
+}
+.footer-left {
+  width: 530px;
+}
+.footer-left__title {
+  color: #E1D4C9;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+.footer-left__its {
+  font-style: italic;
+  color: #B0907A;
+}
+.footer-social {
+  display: flex;
+}
+.footer-social__link {
+  margin-left: 0;
+  margin-right: 12px;
+}
+.footer-social__link:hover button {
+  background-color: #E1D4C9;
+}
+.footer-social__link:hover path {
+  stroke: #403F3D;
+}
+.footer-social__button {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #C1B6AD;
+  background-color: transparent;
 }
