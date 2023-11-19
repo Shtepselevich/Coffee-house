@@ -30,12 +30,17 @@
         border: 1px solid #665F55
         background-color: #E1D4C9
         cursor: pointer
+        transition: 0.3s ease-in-out
         &:hover
             background-color: #665F55
+        &:hover path
+            stroke: #E1D4C9
         &__prev
             margin-left: 0
         &__next
             margin-right: 0
+        &__img path
+            transition: 0.3s ease-in-out
     &-content
         display: flex
         flex-direction: column
