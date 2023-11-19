@@ -56,6 +56,15 @@ html {
   background-color: #E1D4C9;
   margin-right: 0;
 }
+.header-button__menu::after {
+  display: block;
+  content: "";
+  width: 95%;
+  margin-left: 2.5%;
+  height: 2px;
+  background-color: #403F3D;
+  transform-origin: center;
+}
 .header-button::after {
   display: block;
   content: "";
@@ -151,7 +160,7 @@ html {
 }
 .welcome-title__enjoy {
   color: #B0907A;
-  font-style: italic;
+  font-variation-settings: "slnt" -10;
 }
 .welcome-text {
   display: inline-block;
@@ -215,7 +224,7 @@ html {
   margin-bottom: 40px;
 }
 .slider-title__favorite {
-  font-style: italic;
+  font-variation-settings: "slnt" -10;
   color: #B0907A;
 }
 .slider-wrapper {
@@ -326,7 +335,7 @@ html {
 .about-title {
   color: #403F3D;
   font-family: Inter;
-  font-size: 59.5px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
@@ -334,7 +343,7 @@ html {
 }
 .about-title__perfect {
   color: #B0907A;
-  font-style: italic;
+  font-variation-settings: "slnt" -10;
 }
 .about-box {
   display: flex;
@@ -425,7 +434,7 @@ html {
 }
 .download-download {
   color: #B0907A;
-  font-style: italic;
+  font-variation-settings: "slnt" -10;
 }
 .download-text {
   color: #403F3D;
@@ -518,7 +527,7 @@ html {
   margin-bottom: 40px;
 }
 .footer-left__its {
-  font-style: italic;
+  font-variation-settings: "slnt" -10;
   color: #B0907A;
 }
 .footer-social {
@@ -612,4 +621,19 @@ html {
   font-weight: 600;
   line-height: 150%;
   margin-left: 8px;
+}
+
+.menu-title {
+  width: 800px;
+  color: #403F3D;
+  text-align: center;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+.menu-amazing {
+  font-variation-settings: "slnt" -10;
+  color: #B0907A;
 }
