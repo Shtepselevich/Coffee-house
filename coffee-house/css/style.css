@@ -51,6 +51,11 @@ html {
   margin-right: 0;
   cursor: pointer;
 }
+.header-button__menu {
+  border: none;
+  background-color: #E1D4C9;
+  margin-right: 0;
+}
 .header-button::after {
   display: block;
   content: "";

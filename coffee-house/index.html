@@ -18,15 +18,17 @@
         </div>
         <nav class="navbar">
             <ul class="navbar-menu">
-                <li class="navbar-menu__item"><a href="" class="navbar-menu__link">Favorite coffee</a></li>
-                <li class="navbar-menu__item"><a href="" class="navbar-menu__link">About</a></li>
-                <li class="navbar-menu__item"><a href="" class="navbar-menu__link">Mobile app</a></li>
-                <li class="navbar-menu__item"><a href="" class="navbar-menu__link">Contact us</a></li>
+                <li class="navbar-menu__item"><a href="#favorite" class="navbar-menu__link">Favorite coffee</a></li>
+                <li class="navbar-menu__item"><a href="#about" class="navbar-menu__link">About</a></li>
+                <li class="navbar-menu__item"><a href="#download" class="navbar-menu__link">Mobile app</a></li>
+                <li class="navbar-menu__item"><a href="#contact" class="navbar-menu__link">Contact us</a></li>
             </ul>
         </nav>
         <div class="header-menu">
-            <button class="header-button"><span class="header-button__text">Menu</span><img src="image/coffee-cup.svg"
-                    alt="Cup" class="header-button__icon"></button>
+            <a href="menu.html" class="header-menu__link">
+                <button class="header-button"><span class="header-button__text">Menu</span><img
+                        src="image/coffee-cup.svg" alt="Cup" class="header-button__icon"></button>
+            </a>
         </div>
     </header>
     <main class="main">
@@ -39,7 +41,7 @@
             <button class="welcome-button"><span class="welcome-button__text">Menu</span><img src="image/coffee-cup.svg"
                     alt="Cup" class="welcome-button__icon"></button>
         </section>
-        <section class="slider">
+        <section id="favorite" class="slider">
             <h1 class="slider-title">Choose your <span class="slider-title__favorite">favorite</span> coffee</h1>
             <div class="slider-wrapper">
                 <button class="slider-button slider-button__prev">
@@ -68,7 +70,7 @@
                 <button class="slider-pagination__button"><span class="slider-pagination__item"></span></button>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <h2 class="about-title">Resource is <span class="about-title__perfect">the perfect and cozy place</span>
                 where
                 you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
@@ -87,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="download">
+        <section id="download" class="download">
             <div class="download-left">
                 <h2 class="download-title"><span class="download-download">Download</span> our apps to start ordering
                 </h2>
@@ -136,7 +138,7 @@
                 <img src="image/mobile-app.png" alt="" class="download-image">
             </div>
         </section>
-        <section class="footer">
+        <section id="contact" class="footer">
             <div class="footer-left">
                 <h1 class="footer-left__title">Sip, Savor, Smile. <span class="footer-left__its">It’s coffee
                         time!</span></h1>
