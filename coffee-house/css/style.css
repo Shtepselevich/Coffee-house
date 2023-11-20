@@ -585,10 +585,15 @@ html {
   font-weight: 600;
   line-height: 150%;
   margin-left: 0;
-  margin-bottom: 16px;
   text-decoration: none;
+  display: flex;
 }
-.footer-right__link::after {
+.footer-right__link-wrapper {
+  margin-left: 0;
+  height: 28px;
+  margin-bottom: 16px;
+}
+.footer-right__link-wrapper::after {
   display: block;
   content: "";
   width: 97%;
@@ -598,7 +603,7 @@ html {
   transform: scaleX(0);
   transition: 0.4s ease-in-out;
 }
-.footer-right__link:hover::after {
+.footer-right__link-wrapper:hover::after {
   width: 97%;
   margin-left: 3%;
   transform: scaleX(1);
@@ -613,6 +618,7 @@ html {
   line-height: 150%;
   margin-left: 0;
   margin-bottom: 16px;
+  display: flex;
 }
 .footer-right__text {
   display: inline-block;
@@ -622,7 +628,7 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-  margin-left: 4px;
+  margin-left: 8px;
 }
 
 .menu {
@@ -791,6 +797,13 @@ html {
   .welcome {
     max-width: 688px;
     padding: 100px 60px;
+  }
+  .welcome-button__text {
+    transform: translateX(-30%);
+  }
+  .welcome-button__icon {
+    opacity: 1;
+    transform: translateX(-65%);
   }
   .about-title {
     width: 688px;
