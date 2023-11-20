@@ -666,6 +666,7 @@ html {
   border-radius: 100px;
   border: 1px solid #C1B6AD;
   background-color: #E1D4C9;
+  cursor: pointer;
 }
 .menu-button.active {
   border: 1px solid #665F55;
@@ -695,6 +696,22 @@ html {
   border-radius: 100px;
   background: #C1B6AD;
   margin-right: 8px;
+}
+.menu-refresh {
+  display: none;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #665F55;
+  background-color: #E1D4C9;
+}
+.menu-refresh:hover {
+  background-color: #665F55;
+}
+.menu-refresh:hover path {
+  stroke: #E1D4C9;
 }
 
 .card {
@@ -868,5 +885,24 @@ html {
   }
   .menu-title {
     width: 688px;
+  }
+  .menu-refresh {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .menu-coffee {
+    margin-bottom: 40px;
+    height: 1052px;
+    overflow: hidden;
+  }
+  .menu-tea {
+    margin-bottom: 40px;
+    height: 1052px;
+    overflow: hidden;
+  }
+  .menu-dessert {
+    margin-bottom: 40px;
+    height: 1052px;
+    overflow: hidden;
   }
 }
