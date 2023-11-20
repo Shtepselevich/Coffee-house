@@ -766,6 +766,7 @@ html {
   gap: 40px;
   flex-wrap: wrap;
   margin-bottom: 100px;
+  display: none;
 }
 .menu-desert {
   display: flex;
@@ -773,4 +774,5 @@ html {
   gap: 40px;
   flex-wrap: wrap;
   margin-bottom: 100px;
+  display: none;
 }
