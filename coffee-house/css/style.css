@@ -892,8 +892,11 @@ html {
   }
   .menu-coffee {
     margin-bottom: 40px;
+    width: 688px;
     height: 1052px;
     overflow: hidden;
+    padding-left: 14px;
+    padding-right: 14px;
   }
   .menu-tea {
     margin-bottom: 40px;
@@ -904,5 +907,8 @@ html {
     margin-bottom: 40px;
     height: 1052px;
     overflow: hidden;
+  }
+  .header-icon {
+    height: 60px;
   }
 }
