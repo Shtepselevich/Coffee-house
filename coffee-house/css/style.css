@@ -67,6 +67,7 @@ html {
 .header-menu__burger-menu {
   display: none;
   position: relative;
+  top: 3px;
   border-radius: 100px;
   border: 1px solid var(--border-dark, #665F55);
   width: 44px;
@@ -714,6 +715,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -5px;
 }
 .menu-title {
   width: 800px;
@@ -1122,5 +1124,8 @@ html {
   .menu-coffee {
     width: 348px;
     height: 2144px;
+  }
+  .menu-buttons {
+    gap: 8px;
   }
 }
