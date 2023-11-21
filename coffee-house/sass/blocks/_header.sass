@@ -15,6 +15,69 @@
     &-menu
         margin-right: 0
         margin-top: -5px
+        &__burger
+            display: none
+            position: relative
+            border-radius: 100px
+            border: 1px solid var(--border-dark, #665F55)
+            width: 44px
+            height: 44px
+            background-color: #E1D4C9
+            outline: none
+            cursor: pointer
+            transition: 0.3s ease-in-out
+            &:hover
+                background-color: #665F55
+            &:hover span
+                background-color: #E1D4C9
+            &-menu
+                display: none
+                position: relative
+                border-radius: 100px
+                border: 1px solid var(--border-dark, #665F55)
+                width: 44px
+                height: 44px
+                background-color: #E1D4C9
+                outline: none
+                transition: 0.3s ease-in-out
+            &-menu span
+                display: block
+                position: absolute
+                left: 13px
+                top: 21px
+                width: 16px
+                height: 1.5px
+                background-color: #403F3D
+                transition: opacity .3s, transform .5s
+                will-change: transform
+                transition: 0.3s ease-in-out
+            &-menu span:nth-child(1)
+                transform: translateY(-4px)
+            &-menu span:nth-child(2)
+                transform: translateY(4px)
+            &-menu &-burger span:nth-child(1)
+                transform: translateY(0) rotate(45deg)
+            &-menu &-burger span:nth-child(2)
+                transform: translateY(0) rotate(-45deg)
+        &__burger span
+            display: block
+            position: absolute
+            left: 13px
+            top: 21px
+            width: 16px
+            height: 1.5px
+            background-color: #403F3D
+            transition: opacity .3s, transform .5s
+            will-change: transform
+            transition: 0.3s ease-in-out
+        &__burger span:nth-child(1)
+            transform: translateY(-4px)
+        &__burger span:nth-child(2)
+            transform: translateY(4px)
+        .header.open &-burger span:nth-child(1)
+            transform: translateY(0) rotate(45deg)
+        .header.open &-burger span:nth-child(2)
+            transform: translateY(0) rotate(-45deg)
     &-button
         border: none
         background-color: #E1D4C9
