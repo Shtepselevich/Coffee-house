@@ -513,6 +513,8 @@ html {
   background: #665F55;
   padding: 100px;
   margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 .footer-left {
   width: 530px;
