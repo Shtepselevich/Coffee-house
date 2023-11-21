@@ -914,3 +914,119 @@ html {
     height: 60px;
   }
 }
+@media (max-width: 767px) {
+  body {
+    max-width: 380px;
+  }
+  .header {
+    width: 380px;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+  }
+  .header-icon {
+    margin-left: 0;
+    width: 100px;
+    margin-right: auto;
+  }
+  .main {
+    width: 380px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .welcome {
+    max-width: 348px;
+    height: 552px;
+    padding: 60px 16px;
+  }
+  .welcome-title {
+    width: 316px;
+    font-size: 42px;
+    line-height: 115%;
+  }
+  .welcome-title__enjoy {
+    font-size: 42px;
+    line-height: 115%;
+  }
+  .welcome-text {
+    width: 316px;
+  }
+  .slider {
+    width: 348px;
+  }
+  .slider-title {
+    font-size: 32px;
+  }
+  .slider-button {
+    display: none;
+  }
+  .slider-content {
+    width: 348px;
+  }
+  .slider-content__img {
+    width: 348px;
+    height: 348px;
+  }
+  .slider-content__title {
+    width: 348px;
+  }
+  .slider-content__info {
+    width: 348px;
+  }
+  .about-title {
+    width: 348px;
+    font-size: 32px;
+  }
+  .about-box {
+    width: 348px;
+  }
+  .about-box__wrapper {
+    width: 348px;
+    height: 590px;
+  }
+  .about-box__img {
+    transform: scale(2.1);
+    margin-top: 120px;
+  }
+  .about-box__img:hover {
+    transform: scale(2);
+  }
+  .download-left {
+    width: 348px;
+    margin-bottom: 40px;
+  }
+  .download-title {
+    font-size: 32px;
+  }
+  .download-buttons {
+    flex-direction: column;
+  }
+  .download-button {
+    margin-bottom: 20px;
+  }
+  .download-right {
+    width: 348px;
+  }
+  .download-image {
+    width: 348px;
+    height: 348px;
+  }
+  .footer {
+    width: 348px;
+    height: 526px;
+    padding: 60px 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .footer-left {
+    width: 316px;
+    margin-bottom: 40px;
+  }
+  .footer-left__title {
+    width: 348px;
+    font-size: 32px;
+  }
+  .footer-right {
+    width: 316px;
+  }
+}
