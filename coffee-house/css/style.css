@@ -222,6 +222,9 @@ html {
   margin-bottom: 100px;
   margin-top: -5px;
 }
+.welcome a {
+  text-decoration: none;
+}
 .welcome-title {
   width: 530px;
   color: #E1D4C9;
