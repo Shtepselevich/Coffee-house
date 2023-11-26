@@ -47,10 +47,9 @@ html {
   margin-top: -5px;
 }
 .header-button {
-  border: none;
-  background-color: #E1D4C9;
   margin-right: 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .header-button__menu {
   border: none;
@@ -540,7 +539,7 @@ html {
   margin-left: 0;
   margin-right: 12px;
 }
-.footer-social__link:hover button {
+.footer-social__link:hover span {
   background-color: #E1D4C9;
 }
 .footer-social__link:hover path {
