@@ -55,12 +55,12 @@ html {
   border: none;
   background-color: #E1D4C9;
   margin-right: 0;
+  text-decoration: none;
 }
 .header-button__menu::after {
   display: block;
   content: "";
-  width: 95%;
-  margin-left: 2.5%;
+  width: 100%;
   height: 2px;
   background-color: #403F3D;
   transform-origin: center;
@@ -68,8 +68,7 @@ html {
 .header-button::after {
   display: block;
   content: "";
-  width: 95%;
-  margin-left: 2.5%;
+  width: 100%;
   height: 2px;
   background-color: #403F3D;
   transform: scaleX(0);
@@ -78,8 +77,7 @@ html {
 }
 .header-button:hover::after {
   transform: scaleX(1);
-  width: 95%;
-  margin-left: 2.5%;
+  width: 100%;
   transition: 0.4s ease-in-out;
 }
 .header-button__text {
@@ -119,16 +117,14 @@ html {
 .navbar-menu__item::after {
   display: block;
   content: "";
-  width: 95%;
-  margin-left: 3%;
+  width: 100%;
   height: 2px;
   background-color: #403F3D;
   transform: scaleX(0);
   transition: 0.4s ease-in-out;
 }
 .navbar-menu__item:hover::after {
-  width: 95%;
-  margin-left: 3%;
+  width: 100%;
   transform: scaleX(1);
   transition: 0.4s ease-in-out;
 }
