@@ -31,6 +31,15 @@
         border: 1px solid #C1B6AD
         background-color: #E1D4C9
         cursor: pointer
+        transition: 0.3s ease-in-out
+        &:hover
+            border: 1px solid #665F55
+            background-color: #665F55
+            cursor: pointer
+        &:hover .menu-button__circle
+            background-color: #E1D4C9
+        &:hover span
+            color: #E1D4C9
         &.active
             border: 1px solid #665F55
             background-color: #665F55
@@ -46,6 +55,7 @@
             font-style: normal
             font-weight: 600
             line-height: 150%
+            transition: 0.3s ease-in-out
         &__circle
             width: 30px
             height: 30px
@@ -56,6 +66,7 @@
             border-radius: 100px
             background: #C1B6AD
             margin-right: 8px
+            transition: 0.3s ease-in-out
     &-refresh
         display: none
         width: 60px
@@ -65,6 +76,9 @@
         border-radius: 100px
         border: 1px solid #665F55
         background-color: #E1D4C9
+        transition: 0.3s ease-in-out
+        & path
+            transition: 0.3s ease-in-out
         &:hover
             background-color: #665F55
         &:hover path
