@@ -800,6 +800,7 @@ html {
   border: 1px solid #665F55;
   background-color: #E1D4C9;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .menu-refresh path {
   transition: 0.3s ease-in-out;
