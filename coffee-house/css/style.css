@@ -125,21 +125,21 @@ html {
   transform: translateY(0) rotate(-45deg);
 }
 .header-button {
-  border: none;
-  background-color: #E1D4C9;
   margin-right: 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .header-button__menu {
   border: none;
   background-color: #E1D4C9;
   margin-right: 0;
+  text-decoration: none;
+  cursor: default;
 }
 .header-button__menu::after {
   display: block;
   content: "";
-  width: 95%;
-  margin-left: 2.5%;
+  width: 100%;
   height: 2px;
   background-color: #403F3D;
   transform-origin: center;
@@ -147,8 +147,7 @@ html {
 .header-button::after {
   display: block;
   content: "";
-  width: 95%;
-  margin-left: 2.5%;
+  width: 100%;
   height: 2px;
   background-color: #403F3D;
   transform: scaleX(0);
@@ -157,8 +156,7 @@ html {
 }
 .header-button:hover::after {
   transform: scaleX(1);
-  width: 95%;
-  margin-left: 2.5%;
+  width: 100%;
   transition: 0.4s ease-in-out;
 }
 .header-button__text {
@@ -198,16 +196,14 @@ html {
 .navbar-menu__item::after {
   display: block;
   content: "";
-  width: 95%;
-  margin-left: 3%;
+  width: 100%;
   height: 2px;
   background-color: #403F3D;
   transform: scaleX(0);
   transition: 0.4s ease-in-out;
 }
 .navbar-menu__item:hover::after {
-  width: 95%;
-  margin-left: 3%;
+  width: 100%;
   transform: scaleX(1);
   transition: 0.4s ease-in-out;
 }
@@ -618,7 +614,7 @@ html {
   margin-left: 0;
   margin-right: 12px;
 }
-.footer-social__link:hover button {
+.footer-social__link:hover span {
   background-color: #E1D4C9;
 }
 .footer-social__link:hover path {
@@ -709,6 +705,7 @@ html {
   font-weight: 600;
   line-height: 150%;
   margin-left: 8px;
+  text-decoration: none;
 }
 
 .menu {
@@ -727,6 +724,7 @@ html {
   font-weight: 600;
   line-height: 125%;
   margin-bottom: 40px;
+  margin-top: -5px;
 }
 .menu-amazing {
   font-style: italic;
@@ -748,10 +746,23 @@ html {
   border: 1px solid #C1B6AD;
   background-color: #E1D4C9;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.menu-button:hover {
+  border: 1px solid #665F55;
+  background-color: #665F55;
+  cursor: pointer;
+}
+.menu-button:hover .menu-button__circle {
+  background-color: #E1D4C9;
+}
+.menu-button:hover span {
+  color: #E1D4C9;
 }
 .menu-button.active {
   border: 1px solid #665F55;
   background-color: #665F55;
+  cursor: default;
 }
 .menu-button.active .menu-button__circle {
   background-color: #E1D4C9;
@@ -766,6 +777,7 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  transition: 0.3s ease-in-out;
 }
 .menu-button__circle {
   width: 30px;
@@ -777,6 +789,7 @@ html {
   border-radius: 100px;
   background: #C1B6AD;
   margin-right: 8px;
+  transition: 0.3s ease-in-out;
 }
 .menu-refresh {
   display: none;
@@ -787,6 +800,10 @@ html {
   border-radius: 100px;
   border: 1px solid #665F55;
   background-color: #E1D4C9;
+  transition: 0.3s ease-in-out;
+}
+.menu-refresh path {
+  transition: 0.3s ease-in-out;
 }
 .menu-refresh:hover {
   background-color: #665F55;
@@ -808,15 +825,21 @@ html {
   align-items: center;
   border-radius: 40px;
   border: 1px solid #C1B6AD;
+  cursor: pointer;
+}
+.card-wrapper:hover img {
+  transform: scale(1);
 }
 .card-container {
   width: 310px;
   height: 310px;
   border-radius: 40px;
   overflow: hidden;
+  margin: 0;
 }
 .card-container__img {
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
   transition: transform 0.5s ease-in-out;
   transform: scale(1.1);
 }
