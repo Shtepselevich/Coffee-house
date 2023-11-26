@@ -630,6 +630,7 @@ html {
   font-weight: 600;
   line-height: 150%;
   margin-left: 8px;
+  text-decoration: none;
 }
 
 .menu {
@@ -673,6 +674,7 @@ html {
 .menu-button.active {
   border: 1px solid #665F55;
   background-color: #665F55;
+  cursor: default;
 }
 .menu-button.active .menu-button__circle {
   background-color: #E1D4C9;
@@ -729,6 +731,10 @@ html {
   align-items: center;
   border-radius: 40px;
   border: 1px solid #C1B6AD;
+  cursor: pointer;
+}
+.card-wrapper:hover img {
+  transform: scale(1);
 }
 .card-container {
   width: 310px;
