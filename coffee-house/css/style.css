@@ -647,6 +647,7 @@ html {
   font-weight: 600;
   line-height: 125%;
   margin-bottom: 40px;
+  margin-top: -5px;
 }
 .menu-amazing {
   font-style: italic;
