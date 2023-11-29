@@ -943,6 +943,9 @@ html {
   .about-box__wrapper4 {
     margin-right: auto;
   }
+  .about-box__img:hover {
+    transform: scale(1.05);
+  }
 }
 @media (max-width: 1050px) {
   .about-box {
@@ -952,6 +955,9 @@ html {
 @media (max-width: 980px) {
   .about-box {
     max-height: 790px;
+  }
+  .footer-left__title {
+    font-size: 48px;
   }
 }
 @media (max-width: 769px) {
@@ -978,7 +984,7 @@ html {
   .about-box {
     flex-wrap: nowrap;
     width: 688px;
-    height: auto;
+    max-height: 1260px;
   }
   .about-box__wrapper {
     margin: 0;

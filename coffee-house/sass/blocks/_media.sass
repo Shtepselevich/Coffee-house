@@ -23,6 +23,10 @@
                 margin-right: auto
             &__wrapper4
                 margin-right: auto
+            &__img
+                &:hover
+                    transform: scale(1.05)
+
 @media (max-width: 1050px)
     .about
         &-box
@@ -31,6 +35,8 @@
     .about
         &-box
             max-height: 790px
+    .footer-left__title
+        font-size: 48px
 @media (max-width: 769px)
     body
         max-width: 768px
@@ -50,7 +56,7 @@
     .about-box
         flex-wrap: nowrap
         width: 688px
-        height: auto
+        max-height: 1260px
         &__wrapper
             margin: 0
             width: 688px
