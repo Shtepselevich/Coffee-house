@@ -275,11 +275,11 @@ html {
 }
 .welcome-button__icon {
   opacity: 0;
+  transform: translateX(-64%);
   transition: 0.3s ease-in-out;
 }
 .welcome-button:hover .welcome-button__icon {
   opacity: 1;
-  transform: translateX(-65%);
 }
 .welcome-button:hover .welcome-button__text {
   transform: translateX(-30%);
