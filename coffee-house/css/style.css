@@ -912,6 +912,36 @@ html {
 }
 
 @media (max-width: 1439px) {
+  .welcome {
+    width: 100%;
+  }
+  .header-icon {
+    margin-right: auto;
+  }
+  .header-menu {
+    margin-left: 0;
+  }
+  .about-box {
+    width: 100%;
+    height: auto;
+  }
+  .about-box-wrapper {
+    margin-left: auto;
+  }
+  .about-box-wrapper1 {
+    margin-left: auto;
+  }
+  .about-box-wrapper2 {
+    margin-left: auto;
+  }
+  .about-box-wrapper3 {
+    margin-right: auto;
+  }
+  .about-box-wrapper4 {
+    margin-right: auto;
+  }
+}
+@media (max-width: 769px) {
   body {
     max-width: 768px;
   }
@@ -1028,7 +1058,7 @@ html {
     height: 60px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 380px) {
   body {
     max-width: 380px;
   }
