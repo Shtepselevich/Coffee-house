@@ -226,7 +226,7 @@ html {
   text-decoration: none;
 }
 .welcome-title {
-  width: 530px;
+  max-width: 530px;
   color: #E1D4C9;
   font-family: Inter;
   font-size: 72px;
@@ -242,7 +242,7 @@ html {
 }
 .welcome-text {
   display: inline-block;
-  width: 530px;
+  max-width: 530px;
   color: #E1D4C9;
   font-family: Inter;
   font-size: 16px;
@@ -366,7 +366,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  width: 480px;
+  max-width: 480px;
   margin-bottom: 16px;
 }
 .slider-content__price {
@@ -946,6 +946,12 @@ html {
   .about-box__img:hover {
     transform: scale(1.05);
   }
+  .download-left {
+    height: auto;
+  }
+  .download-right {
+    height: auto;
+  }
 }
 @media (max-width: 1050px) {
   .about-box {
@@ -958,6 +964,9 @@ html {
   }
   .footer-left__title {
     font-size: 48px;
+  }
+  .welcome-title {
+    font-size: 58px;
   }
 }
 @media (max-width: 769px) {
@@ -979,7 +988,7 @@ html {
     transform: translateX(-65%);
   }
   .about-title {
-    width: 688px;
+    max-width: 688px;
   }
   .about-box {
     flex-wrap: nowrap;
@@ -1040,7 +1049,7 @@ html {
     margin-left: 0;
   }
   .menu-title {
-    width: 688px;
+    max-width: 688px;
   }
   .menu-refresh {
     display: block;
@@ -1077,7 +1086,32 @@ html {
     height: 60px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 767px) {
+  .about-box {
+    max-width: 767px;
+  }
+  .about-box__wrapper {
+    width: 95vw;
+    height: auto;
+  }
+  .about-title {
+    font-size: 46px;
+  }
+  .welcome-title {
+    font-size: 52px;
+    line-height: 100%;
+  }
+  .slider-wrapper {
+    max-width: 420px;
+  }
+  .slider-button {
+    display: none;
+  }
+  .slider-content__info {
+    max-width: 420px;
+  }
+}
+@media (max-width: 499px) {
   body {
     max-width: 380px;
   }
