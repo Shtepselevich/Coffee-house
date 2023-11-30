@@ -1135,6 +1135,9 @@ html {
   .footer-left {
     margin-bottom: auto;
   }
+  .footer-left__title {
+    font-size: 42px;
+  }
   .footer-social {
     margin-bottom: 40px;
   }
