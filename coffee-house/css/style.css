@@ -1092,10 +1092,13 @@ html {
 }
 @media (max-width: 767px) {
   .about-box {
-    max-width: 767px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .about-box__wrapper {
-    width: 95vw;
+    width: 85vw;
     height: auto;
   }
   .about-title {
