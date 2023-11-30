@@ -528,7 +528,7 @@ html {
 }
 .download-button {
   display: flex;
-  width: 200px;
+  max-width: 200px;
   padding: 12px 20px;
   align-items: center;
   border-radius: 100px;
@@ -641,7 +641,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 530px;
+  max-width: 530px;
   margin-right: 0;
   margin-top: 15px;
 }
@@ -1021,7 +1021,7 @@ html {
     margin-top: -49px;
   }
   .about-box__img:hover {
-    transform: scale(1);
+    transform: scale(1.06);
   }
   .download {
     flex-direction: column;
@@ -1104,7 +1104,7 @@ html {
     margin-right: auto;
   }
   .about-box__wrapper {
-    width: 85vw;
+    width: 80vw;
     height: auto;
   }
   .about-title {
