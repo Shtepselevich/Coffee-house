@@ -209,8 +209,8 @@ html {
 }
 
 .welcome {
-  width: 1360px;
-  height: 644px;
+  max-width: 1360px;
+  max-height: 644px;
   background-image: url(../image/welcome.jpeg);
   background-position: center;
   background-size: cover;
@@ -485,16 +485,16 @@ html {
 }
 .download-left {
   margin-left: 0;
-  width: 630px;
-  height: 630px;
+  max-width: 630px;
+  max-height: 630px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 .download-right {
-  width: 630px;
-  height: 630px;
+  max-width: 630px;
+  max-height: 630px;
   margin-right: 0;
   display: flex;
   align-items: center;
@@ -584,7 +584,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 450px;
+  max-height: 450px;
   border-radius: 40px;
   background: #665F55;
   padding: 100px;
@@ -593,7 +593,7 @@ html {
   margin-left: 40px;
 }
 .footer-left {
-  width: 530px;
+  max-width: 530px;
   margin-left: 0;
 }
 .footer-left__title {
@@ -913,10 +913,10 @@ html {
 
 @media (max-width: 1439px) {
   .welcome {
-    width: 100%;
+    max-width: 100%;
   }
   .welcome-title {
-    width: 100%;
+    max-width: 100%;
   }
   .header-icon {
     margin-right: auto;
@@ -962,9 +962,12 @@ html {
   }
 }
 @media (max-width: 980px) {
+  .welcome {
+    padding: 100px 60px;
+  }
   .welcome-title {
     height: auto;
-    width: 550px;
+    max-width: 550px;
   }
   .about-box {
     max-height: 790px;
@@ -1024,26 +1027,26 @@ html {
     flex-direction: column;
   }
   .download-left {
-    width: 688px;
+    max-width: 688px;
     height: auto;
     margin-bottom: 100px;
   }
   .download-right {
-    width: 688px;
+    max-width: 688px;
     height: auto;
   }
   .download-image {
-    width: 630px;
-    height: 630px;
+    max-width: 630px;
+    max-height: 630px;
   }
   .footer {
     flex-direction: column;
     padding: 100px 60px;
-    height: 736px;
-    width: 688px;
+    max-height: 736px;
+    max-width: 688px;
   }
   .footer-left {
-    width: 568px;
+    max-width: 568px;
     height: auto;
     margin-bottom: 100px;
   }
@@ -1091,6 +1094,9 @@ html {
   }
 }
 @media (max-width: 767px) {
+  .welcome {
+    padding: 70px 30px;
+  }
   .about-box {
     width: auto;
     height: auto;
@@ -1105,6 +1111,7 @@ html {
     font-size: 46px;
   }
   .welcome-title {
+    max-width: 480px;
     font-size: 52px;
     line-height: 100%;
   }
@@ -1116,6 +1123,20 @@ html {
   }
   .slider-content__info {
     max-width: 420px;
+  }
+  .download-image {
+    width: 100%;
+    height: 100%;
+  }
+  .footer {
+    max-height: 600px;
+    padding: 60px 25px;
+  }
+  .footer-left {
+    margin-bottom: auto;
+  }
+  .footer-social {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 499px) {

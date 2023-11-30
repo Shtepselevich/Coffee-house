@@ -1,8 +1,8 @@
 @media (max-width: 1439px)
     .welcome
-        width: 100%
+        max-width: 100%
         &-title
-            width: 100%
+            max-width: 100%
     .header
         &-icon
             margin-right: auto
@@ -40,9 +40,10 @@
             max-height: 1000px
 @media (max-width: 980px)
     .welcome
+        padding: 100px 60px
         &-title
             height: auto
-            width: 550px
+            max-width: 550px
     .about
         &-box
             max-height: 790px
@@ -87,22 +88,22 @@
     .download
         flex-direction: column
         &-left
-            width: 688px
+            max-width: 688px
             height: auto
             margin-bottom: 100px
         &-right
-            width: 688px
+            max-width: 688px
             height: auto
         &-image
-            width: 630px
-            height: 630px
+            max-width: 630px
+            max-height: 630px
     .footer
         flex-direction: column
         padding: 100px 60px
-        height: 736px
-        width: 688px
+        max-height: 736px
+        max-width: 688px
         &-left
-            width: 568px
+            max-width: 568px
             height: auto
             margin-bottom: 100px
         &-right
@@ -143,6 +144,8 @@
         &-icon
             height: 60px
 @media (max-width: 767px)
+    .welcome
+        padding: 70px 30px
     .about-box
         width: auto
         height: auto
@@ -151,12 +154,12 @@
         &__wrapper
             width: 85vw
             height: auto
-
     .about
         &-title
             font-size: 46px
     .welcome
         &-title
+            max-width: 480px
             font-size: 52px
             line-height: 100%
     .slider
@@ -167,6 +170,18 @@
         &-content
             &__info
                 max-width: 420px
+    .download
+        &-image
+            width: 100%
+            height: 100%
+    .footer
+        max-height: 600px
+        padding: 60px 25px
+        &-left
+            margin-bottom: auto
+
+        &-social
+            margin-bottom: 40px
 @media (max-width: 499px)
     body
         max-width: 380px
