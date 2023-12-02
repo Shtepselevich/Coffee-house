@@ -583,6 +583,7 @@ html {
 .footer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   max-height: 450px;
   border-radius: 40px;
   background: #665F55;
@@ -643,6 +644,7 @@ html {
   align-items: center;
   margin-top: 15px;
   margin-left: 0;
+  max-width: 265px;
 }
 .footer-right__title {
   color: #E1D4C9;
@@ -954,6 +956,9 @@ html {
   .download-right {
     height: auto;
   }
+  .footer {
+    max-height: 736px;
+  }
 }
 @media (max-width: 1050px) {
   .about-box {
@@ -1139,6 +1144,7 @@ html {
     padding: 60px 25px;
   }
   .footer-left {
+    margin-right: auto;
     margin-bottom: auto;
   }
   .footer-left__title {
