@@ -5,15 +5,15 @@
     margin-bottom: 100px
     &-left
         margin-left: 0
-        width: 630px
-        height: 630px
+        max-width: 630px
+        max-height: 630px
         display: flex
         align-items: center
         flex-direction: column
         justify-content: center
     &-right
-        width: 630px
-        height: 630px
+        max-width: 630px
+        max-height: 630px
         margin-right: 0
         display: flex
         align-items: center
@@ -51,12 +51,6 @@
         margin-right: 20px
         cursor: pointer
         transition: 0.3s ease-in-out
-        &:hover
-            background-color: #665F55
-        &:hover .download-button__img path
-            fill: #E1D4C9
-        &:hover .download-button__info p
-            color: #E1D4C9
         &__img
             margin-left: 0
             margin-right: 8px
@@ -84,3 +78,11 @@
             line-height: 150%
             text-align: left
             transition: 0.3s ease-in-out
+@media (hover: hover)
+    .download-button
+        &:hover
+            background-color: #665F55
+        &:hover .download-button__img path
+            fill: #E1D4C9
+        &:hover .download-button__info p
+            color: #E1D4C9

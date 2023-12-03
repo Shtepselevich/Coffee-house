@@ -4,7 +4,7 @@
     align-items: center
     margin-top: -5px
     &-title
-        width: 800px
+        max-width: 800px
         color: #403F3D
         text-align: center
         font-family: Inter
@@ -13,7 +13,7 @@
         font-weight: 600
         line-height: 125%
         margin-bottom: 40px
-        margin-top: -5px
+        margin-top: 5px
     &-amazing
         font-style: italic
         color: #B0907A
@@ -33,14 +33,6 @@
         background-color: #E1D4C9
         cursor: pointer
         transition: 0.3s ease-in-out
-        &:hover
-            border: 1px solid #665F55
-            background-color: #665F55
-            cursor: pointer
-        &:hover .menu-button__circle
-            background-color: #E1D4C9
-        &:hover span
-            color: #E1D4C9
         &.active
             border: 1px solid #665F55
             background-color: #665F55
@@ -81,6 +73,17 @@
         cursor: pointer
         & path
             transition: 0.3s ease-in-out
+@media (hover: hover)
+    .menu-button
+        &:hover
+            border: 1px solid #665F55
+            background-color: #665F55
+            cursor: pointer
+        &:hover .menu-button__circle
+            background-color: #E1D4C9
+        &:hover span
+            color: #E1D4C9
+    .menu-refresh
         &:hover
             background-color: #665F55
         &:hover path

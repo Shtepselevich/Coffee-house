@@ -18,7 +18,7 @@
         display: flex
         flex-direction: column
         flex-wrap: wrap
-        height: 1060px
+        max-height: 1060px
         width: 1360px
         margin-left: 0
         &__wrapper
@@ -46,8 +46,6 @@
             object-fit: cover
             transition: transform 0.5s ease-in-out
             transform: scale(1.1)
-            &:hover
-                transform: scale(1)
         &__img1
             margin-top: -35px
         &__img2
@@ -56,3 +54,7 @@
             margin-top: -115px
         &__img4
             margin-top: -35px
+@media (hover: hover)
+    .about-box__img
+        &:hover
+            transform: scale(1)

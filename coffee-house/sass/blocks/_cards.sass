@@ -4,18 +4,16 @@
     align-items: flex-start
     &-wrapper
         display: flex
-        height: 506px
-        width: 310px
+        max-height: 506px
+        max-width: 310px
         flex-direction: column
         align-items: center
         border-radius: 40px
         border: 1px solid #C1B6AD
         cursor: pointer
-        &:hover img
-            transform: scale(1)
     &-container
-        width: 310px
-        height: 310px
+        max-width: 310px
+        max-height: 310px
         border-radius: 40px
         overflow: hidden
         margin: 0
@@ -24,8 +22,6 @@
             height: 100%
             transition: transform 0.5s ease-in-out
             transform: scale(1.1)
-            &:hover
-                transform: scale(1)
     &-info
         padding: 20px
         display: flex
@@ -81,3 +77,10 @@
         flex-wrap: wrap
         margin-bottom: 100px
         display: none
+@media (hover: hover)
+    .card-wrapper
+        &:hover img
+            transform: scale(1)
+    .card-container__img
+        &:hover
+            transform: scale(1)

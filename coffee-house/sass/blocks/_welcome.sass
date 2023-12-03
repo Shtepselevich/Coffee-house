@@ -1,6 +1,6 @@
 .welcome
-    width: 1360px
-    height: 644px
+    max-width: 1360px
+    max-height: 644px
     background-image: url(../image/welcome.jpeg)
     background-position: center
     background-size: cover
@@ -10,11 +10,10 @@
     flex-direction: column
     padding: 100px
     margin-bottom: 100px
-    margin-top: -5px
     & a
         text-decoration: none
     &-title
-        width: 530px
+        max-width: 530px
         color: #E1D4C9
         font-family: Inter
         font-size: 72px
@@ -28,7 +27,7 @@
             font-style: italic
     &-text
         display: inline-block
-        width: 530px
+        max-width: 530px
         color: #E1D4C9
         font-family: Inter
         font-size: 16px
@@ -60,9 +59,9 @@
             opacity: 0
             transform: translateX(-64%)
             transition: 0.3s ease-in-out
-
+@media (hover: hover)
+    .welcome-button
         &:hover .welcome-button__icon
             opacity: 1
-
         &:hover .welcome-button__text
             transform: translateX(-30%)
