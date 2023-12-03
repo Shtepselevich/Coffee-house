@@ -325,12 +325,6 @@ html {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-.slider-button:hover {
-  background-color: #665F55;
-}
-.slider-button:hover path {
-  stroke: #E1D4C9;
-}
 .slider-button__prev {
   margin-left: 0;
 }
@@ -405,6 +399,14 @@ html {
   border-color: #C1B6AD;
 }
 
+@media (hover: hover) {
+  .slider-button:hover {
+    background-color: #665F55;
+  }
+  .slider-button:hover path {
+    stroke: #E1D4C9;
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
