@@ -717,7 +717,7 @@ html {
   margin-top: -5px;
 }
 .menu-title {
-  width: 800px;
+  max-width: 800px;
   color: #403F3D;
   text-align: center;
   font-family: Inter;
@@ -726,7 +726,7 @@ html {
   font-weight: 600;
   line-height: 125%;
   margin-bottom: 40px;
-  margin-top: -5px;
+  margin-top: 5px;
 }
 .menu-amazing {
   font-style: italic;
@@ -822,8 +822,8 @@ html {
 }
 .card-wrapper {
   display: flex;
-  height: 506px;
-  width: 310px;
+  max-height: 506px;
+  max-width: 310px;
   flex-direction: column;
   align-items: center;
   border-radius: 40px;
@@ -834,8 +834,8 @@ html {
   transform: scale(1);
 }
 .card-container {
-  width: 310px;
-  height: 310px;
+  max-width: 310px;
+  max-height: 310px;
   border-radius: 40px;
   overflow: hidden;
   margin: 0;
@@ -1068,8 +1068,8 @@ html {
   }
   .menu-coffee {
     margin-bottom: 40px;
-    width: 688px;
-    height: 1052px;
+    max-width: 688px;
+    max-height: 1052px;
     overflow: hidden;
     padding-left: 14px;
     padding-right: 14px;
@@ -1148,6 +1148,9 @@ html {
   }
   .footer-left__title {
     font-size: 42px;
+  }
+  .menu-coffee {
+    max-height: 2144px;
   }
 }
 @media (max-width: 499px) {
