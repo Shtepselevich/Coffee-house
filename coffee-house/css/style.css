@@ -976,9 +976,6 @@ html {
   .about-box {
     max-height: 790px;
   }
-  .footer-left__title {
-    font-size: 48px;
-  }
 }
 @media (max-width: 769px) {
   body {
@@ -1047,7 +1044,7 @@ html {
   .footer {
     flex-direction: column;
     padding: 100px 60px;
-    max-height: 736px;
+    max-height: 900px;
     max-width: 688px;
   }
   .footer-left {
@@ -1058,6 +1055,9 @@ html {
     margin-right: auto;
     margin-top: 0;
     margin-left: 0;
+  }
+  .footer-right__info {
+    margin-bottom: 0;
   }
   .menu-title {
     max-width: 688px;
@@ -1229,7 +1229,7 @@ html {
   }
   .download-left {
     width: 348px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .download-title {
     font-size: 32px;
