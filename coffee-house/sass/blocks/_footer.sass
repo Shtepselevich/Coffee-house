@@ -30,10 +30,6 @@
         &__link
             margin-left: 0
             margin-right: 12px
-            &:hover span
-                background-color: #E1D4C9
-            &:hover path
-                stroke: #403F3D
         &__link path
             transition: 0.3s ease-in-out
         &__button
@@ -86,11 +82,6 @@
                     background-color: #E1D4C9
                     transform: scaleX(0)
                     transition: 0.4s ease-in-out
-                &:hover::after
-                    width: 97%
-                    margin-left: 3%
-                    transform: scaleX(1)
-                    transition: 0.4s ease-in-out
         &__info
             color: #E1D4C9
             font-family: Inter
@@ -111,3 +102,15 @@
             line-height: 150%
             margin-left: 8px
             text-decoration: none
+@media (hover: hover)
+    .footer-social__link
+        &:hover span
+            background-color: #E1D4C9
+        &:hover path
+            stroke: #403F3D
+    .footer-right__link-wrapper
+        &:hover::after
+            width: 97%
+            margin-left: 3%
+            transform: scaleX(1)
+            transition: 0.4s ease-in-out
