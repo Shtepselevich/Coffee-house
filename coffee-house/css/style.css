@@ -1027,9 +1027,6 @@ html {
     transform: scale(1.06);
     margin-top: -49px;
   }
-  .about-box__img:hover {
-    transform: scale(1.06);
-  }
   .download {
     flex-direction: column;
   }
@@ -1101,6 +1098,11 @@ html {
   }
   .header-icon {
     height: 60px;
+  }
+}
+@media (max-width: 769px) and (hover: hover) {
+  .about-box__img:hover {
+    transform: scale(1);
   }
 }
 @media (max-width: 767px) {
@@ -1233,9 +1235,6 @@ html {
     transform: scale(2.1);
     margin-top: 120px;
   }
-  .about-box__img:hover {
-    transform: scale(2);
-  }
   .download-left {
     width: 348px;
     margin-bottom: 20px;
@@ -1283,5 +1282,10 @@ html {
   }
   .menu-buttons {
     gap: 8px;
+  }
+}
+@media (max-width: 499px) and (hover: hover) {
+  .about-box__img:hover {
+    transform: scale(2);
   }
 }

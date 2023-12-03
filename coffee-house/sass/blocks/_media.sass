@@ -84,8 +84,6 @@
         &__img
             transform: scale(1.06)
             margin-top: -49px
-            &:hover
-                transform: scale(1.06)
     .download
         flex-direction: column
         &-left
@@ -144,6 +142,10 @@
                 display: none
         &-icon
             height: 60px
+    @media (hover: hover)
+        .about-box__img
+            &:hover
+                transform: scale(1)
 @media (max-width: 767px)
     .welcome
         padding: 70px 30px
@@ -244,8 +246,6 @@
             &__img
                 transform: scale(2.1)
                 margin-top: 120px
-                &:hover
-                    transform: scale(2)
     .download
         &-left
             width: 348px
@@ -283,3 +283,7 @@
             height: 2144px
         &-buttons
             gap: 8px
+    @media (hover: hover)
+        .about-box__img
+            &:hover
+                transform: scale(2)
