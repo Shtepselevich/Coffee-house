@@ -57,12 +57,6 @@ html {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-.header-menu__burger:hover {
-  background-color: #665F55;
-}
-.header-menu__burger:hover span {
-  background-color: #E1D4C9;
-}
 .header-menu__burger-menu {
   display: none;
   position: relative;
@@ -153,11 +147,6 @@ html {
   transform-origin: center;
   transition: 0.4s ease-in-out;
 }
-.header-button:hover::after {
-  transform: scaleX(1);
-  width: 100%;
-  transition: 0.4s ease-in-out;
-}
 .header-button__text {
   color: #403F3D;
   vertical-align: top;
@@ -201,12 +190,25 @@ html {
   transform: scaleX(0);
   transition: 0.4s ease-in-out;
 }
-.navbar-menu__item:hover::after {
-  width: 100%;
-  transform: scaleX(1);
-  transition: 0.4s ease-in-out;
-}
 
+@media (hover: hover) {
+  .header-menu__burger:hover {
+    background-color: #665F55;
+  }
+  .header-menu__burger:hover span {
+    background-color: #E1D4C9;
+  }
+  .header-button:hover::after {
+    transform: scaleX(1);
+    width: 100%;
+    transition: 0.4s ease-in-out;
+  }
+  .navbar-menu__item:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+    transition: 0.4s ease-in-out;
+  }
+}
 .welcome {
   max-width: 1360px;
   max-height: 644px;
