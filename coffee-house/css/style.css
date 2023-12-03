@@ -591,11 +591,12 @@ html {
   margin-bottom: 40px;
   margin-right: 40px;
   margin-left: 40px;
+  gap: 100px;
 }
 .footer-left {
   max-width: 530px;
   margin-left: 0;
-  margin-right: 100px;
+  margin-right: 0;
 }
 .footer-left__title {
   color: #E1D4C9;
@@ -958,6 +959,7 @@ html {
   }
   .footer {
     max-height: 736px;
+    gap: 100px;
   }
 }
 @media (max-width: 1050px) {
@@ -1052,7 +1054,6 @@ html {
   .footer-left {
     max-width: 568px;
     height: auto;
-    margin-bottom: 100px;
   }
   .footer-right {
     margin-right: auto;
@@ -1140,8 +1141,7 @@ html {
     height: 100%;
   }
   .footer {
-    max-height: 600px;
-    padding: 60px 25px;
+    padding: 60px 35px;
   }
   .footer-left {
     margin-right: auto;
@@ -1149,9 +1149,6 @@ html {
   }
   .footer-left__title {
     font-size: 42px;
-  }
-  .footer-social {
-    margin-bottom: 40px;
   }
 }
 @media (max-width: 499px) {
@@ -1253,10 +1250,10 @@ html {
   }
   .footer {
     width: 348px;
-    height: 526px;
     padding: 60px 16px;
     margin-left: 16px;
     margin-right: 16px;
+    gap: 40px;
   }
   .footer-left {
     width: 316px;
