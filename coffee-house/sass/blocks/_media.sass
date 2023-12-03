@@ -25,9 +25,6 @@
                 margin-right: auto
             &__wrapper4
                 margin-right: auto
-            &__img
-                &:hover
-                    transform: scale(1.05)
     .download
         &-left
             height: auto
@@ -36,6 +33,10 @@
     .footer
         max-height: 736px
         gap: 100px
+    @media (hover: hover)
+        .about-box__img
+            &:hover
+                transform: scale(1.05)
 @media (max-width: 1050px)
     .about
         &-box

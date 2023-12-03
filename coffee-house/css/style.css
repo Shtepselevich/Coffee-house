@@ -461,9 +461,6 @@ html {
   transition: transform 0.5s ease-in-out;
   transform: scale(1.1);
 }
-.about-box__img:hover {
-  transform: scale(1);
-}
 .about-box__img1 {
   margin-top: -35px;
 }
@@ -477,6 +474,11 @@ html {
   margin-top: -35px;
 }
 
+@media (hover: hover) {
+  .about-box__img:hover {
+    transform: scale(1);
+  }
+}
 .download {
   display: flex;
   align-items: center;
@@ -948,9 +950,6 @@ html {
   .about-box__wrapper4 {
     margin-right: auto;
   }
-  .about-box__img:hover {
-    transform: scale(1.05);
-  }
   .download-left {
     height: auto;
   }
@@ -960,6 +959,11 @@ html {
   .footer {
     max-height: 736px;
     gap: 100px;
+  }
+}
+@media (max-width: 1439px) and (hover: hover) {
+  .about-box__img:hover {
+    transform: scale(1.05);
   }
 }
 @media (max-width: 1050px) {
