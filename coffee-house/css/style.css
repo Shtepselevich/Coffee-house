@@ -544,15 +544,6 @@ html {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-.download-button:hover {
-  background-color: #665F55;
-}
-.download-button:hover .download-button__img path {
-  fill: #E1D4C9;
-}
-.download-button:hover .download-button__info p {
-  color: #E1D4C9;
-}
 .download-button__img {
   margin-left: 0;
   margin-right: 8px;
@@ -586,6 +577,17 @@ html {
   transition: 0.3s ease-in-out;
 }
 
+@media (hover: hover) {
+  .download-button:hover {
+    background-color: #665F55;
+  }
+  .download-button:hover .download-button__img path {
+    fill: #E1D4C9;
+  }
+  .download-button:hover .download-button__info p {
+    color: #E1D4C9;
+  }
+}
 .footer {
   display: flex;
   align-items: center;
