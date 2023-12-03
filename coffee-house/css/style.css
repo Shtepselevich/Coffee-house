@@ -762,17 +762,6 @@ html {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-.menu-button:hover {
-  border: 1px solid #665F55;
-  background-color: #665F55;
-  cursor: pointer;
-}
-.menu-button:hover .menu-button__circle {
-  background-color: #E1D4C9;
-}
-.menu-button:hover span {
-  color: #E1D4C9;
-}
 .menu-button.active {
   border: 1px solid #665F55;
   background-color: #665F55;
@@ -820,13 +809,26 @@ html {
 .menu-refresh path {
   transition: 0.3s ease-in-out;
 }
-.menu-refresh:hover {
-  background-color: #665F55;
-}
-.menu-refresh:hover path {
-  stroke: #E1D4C9;
-}
 
+@media (hover: hover) {
+  .menu-button:hover {
+    border: 1px solid #665F55;
+    background-color: #665F55;
+    cursor: pointer;
+  }
+  .menu-button:hover .menu-button__circle {
+    background-color: #E1D4C9;
+  }
+  .menu-button:hover span {
+    color: #E1D4C9;
+  }
+  .menu-refresh:hover {
+    background-color: #665F55;
+  }
+  .menu-refresh:hover path {
+    stroke: #E1D4C9;
+  }
+}
 .card {
   display: flex;
   gap: 40px;
