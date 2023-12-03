@@ -844,9 +844,6 @@ html {
   border: 1px solid #C1B6AD;
   cursor: pointer;
 }
-.card-wrapper:hover img {
-  transform: scale(1);
-}
 .card-container {
   max-width: 310px;
   max-height: 310px;
@@ -859,9 +856,6 @@ html {
   height: 100%;
   transition: transform 0.5s ease-in-out;
   transform: scale(1.1);
-}
-.card-container__img:hover {
-  transform: scale(1);
 }
 .card-info {
   padding: 20px;
@@ -925,6 +919,14 @@ html {
   display: none;
 }
 
+@media (hover: hover) {
+  .card-wrapper:hover img {
+    transform: scale(1);
+  }
+  .card-container__img:hover {
+    transform: scale(1);
+  }
+}
 @media (max-width: 1439px) {
   .welcome {
     max-width: 100%;
