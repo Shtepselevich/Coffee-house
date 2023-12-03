@@ -44,7 +44,6 @@ html {
 }
 .header-menu {
   margin-right: 0;
-  margin-top: -5px;
 }
 .header-menu__burger {
   display: none;
@@ -220,7 +219,6 @@ html {
   flex-direction: column;
   padding: 100px;
   margin-bottom: 100px;
-  margin-top: -5px;
 }
 .welcome a {
   text-decoration: none;
@@ -1040,6 +1038,7 @@ html {
   .download-right {
     max-width: 688px;
     height: auto;
+    margin-right: auto;
   }
   .download-image {
     max-width: 630px;
