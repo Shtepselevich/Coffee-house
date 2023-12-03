@@ -278,13 +278,15 @@ html {
   transform: translateX(-64%);
   transition: 0.3s ease-in-out;
 }
-.welcome-button:hover .welcome-button__icon {
-  opacity: 1;
-}
-.welcome-button:hover .welcome-button__text {
-  transform: translateX(-30%);
-}
 
+@media (hover: hover) {
+  .welcome-button:hover .welcome-button__icon {
+    opacity: 1;
+  }
+  .welcome-button:hover .welcome-button__text {
+    transform: translateX(-30%);
+  }
+}
 .slider {
   display: flex;
   flex-direction: column;
