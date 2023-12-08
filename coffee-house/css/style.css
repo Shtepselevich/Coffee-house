@@ -162,6 +162,9 @@ html {
 
 .navbar {
   margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
 }
 .navbar-menu {
   display: flex;
@@ -169,6 +172,7 @@ html {
   justify-content: center;
   list-style-type: none;
   margin-top: -5px;
+  margin-left: 0;
   gap: 40px;
 }
 .navbar-menu__link {
@@ -180,6 +184,9 @@ html {
   font-weight: 600;
   line-height: 150%;
   text-decoration: none;
+}
+.navbar-menu__item {
+  display: inline-block;
 }
 .navbar-menu__item::after {
   display: block;
@@ -950,6 +957,9 @@ html {
   .header-menu {
     margin-left: 0;
   }
+  .navbar-menu {
+    margin-left: auto;
+  }
   .about-box {
     margin-right: auto;
     margin-left: auto;
@@ -1010,6 +1020,10 @@ html {
     max-width: 768px;
   }
   .navbar {
+    margin-right: 0;
+    flex: initial;
+  }
+  .navbar-menu {
     display: none;
   }
   .welcome {

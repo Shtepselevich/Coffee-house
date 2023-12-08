@@ -112,12 +112,16 @@
             margin-left: 8px
 .navbar
     margin-left: 0
+    display: flex
+    justify-content: space-between
+    flex: 1
     &-menu
         display: flex
         align-items: center
         justify-content: center
         list-style-type: none
         margin-top: -5px
+        margin-left: 0
         gap: 40px
         &__link
             color: #403F3D
@@ -129,6 +133,7 @@
             line-height: 150%
             text-decoration: none
         &__item
+            display: inline-block
             &::after
                 display: block
                 content: ""
