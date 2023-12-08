@@ -25,6 +25,11 @@ html {
   padding-right: 40px;
 }
 
+.body-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -33,6 +38,7 @@ html {
   padding-left: 40px;
   padding-right: 40px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .header-icon {
   margin-left: 0;
@@ -146,6 +152,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex: 1;
+  transition: 0.4s ease-in-out;
 }
 .navbar-menu {
   display: flex;
