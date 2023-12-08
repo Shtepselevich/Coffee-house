@@ -56,6 +56,7 @@ html {
   outline: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  margin-right: 0;
 }
 .header-menu__burger-menu {
   display: none;
@@ -148,6 +149,7 @@ html {
   transition: 0.4s ease-in-out;
 }
 .header-button__text {
+  display: inline-block;
   color: #403F3D;
   vertical-align: top;
   font-family: Inter;
@@ -157,7 +159,10 @@ html {
   line-height: 150%;
 }
 .header-button__icon {
-  margin-left: 8px;
+  margin-left: 5px;
+}
+.header-button__icon-burger {
+  display: none;
 }
 
 .navbar {
@@ -1020,11 +1025,36 @@ html {
     max-width: 768px;
   }
   .navbar {
-    margin-right: 0;
-    flex: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 100px;
+    position: absolute;
+    z-index: 1;
+    max-width: 768px;
+    background-color: #E1D4C9;
+    top: 100px;
+    right: -100%;
+    margin-top: 0;
+    padding: 60px 40px;
+    width: 100%;
+    height: 824px;
+    visibility: hidden;
   }
   .navbar-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-menu__link {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+  }
+  .header.open .navbar {
+    right: 0;
+    visibility: visible;
   }
   .welcome {
     max-width: 688px;
@@ -1126,14 +1156,27 @@ html {
   .header-menu__burger {
     display: block;
   }
+  .header-menu__burger-link {
+    margin-right: 0;
+  }
   .header-menu__burger-menu {
     display: block;
   }
-  .header-menu__link {
-    display: none;
-  }
   .header-icon {
     height: 60px;
+  }
+  .header-button__text {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+  }
+  .header-button__icon {
+    display: none;
+  }
+  .header-button__icon-burger {
+    display: inline-block;
+    margin-left: 13px;
   }
 }
 @media (max-width: 769px) and (hover: hover) {

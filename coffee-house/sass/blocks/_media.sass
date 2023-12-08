@@ -57,10 +57,33 @@
     body
         max-width: 768px
     .navbar
-        margin-right: 0
-        flex: initial
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: start
+        gap: 100px
+        position: absolute
+        z-index: 1
+        max-width: 768px
+        background-color: #E1D4C9
+        top: 100px
+        right: -100%
+        margin-top: 0
+        padding: 60px 40px
+        width: 100%
+        height: 824px
+        visibility: hidden
         &-menu
-            display: none
+            display: flex
+            flex-direction: column
+            &__link
+                font-size: 32px
+                font-style: normal
+                font-weight: 600
+                line-height: 125%
+    .header.open .navbar
+        right: 0
+        visibility: visible
     .welcome
         max-width: 688px
         padding: 100px 60px
@@ -141,12 +164,23 @@
         &-menu
             &__burger
                 display: block
+                &-link
+                    margin-right: 0
                 &-menu
                     display: block
-            &__link
-                display: none
         &-icon
             height: 60px
+        &-button
+            &__text
+                font-size: 32px
+                font-style: normal
+                font-weight: 600
+                line-height: 125%
+            &__icon
+                display: none
+                &-burger
+                    display: inline-block
+                    margin-left: 13px
     @media (hover: hover)
         .about-box__img
             &:hover
