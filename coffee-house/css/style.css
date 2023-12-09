@@ -413,12 +413,22 @@ html {
   background: #665F55;
 }
 .slider-pagination__item {
+  position: relative;
   display: block;
   width: 40px;
   height: 4px;
   border-radius: 100px;
   background: #C1B6AD;
   border-color: #C1B6AD;
+}
+.slider-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #00ff00;
+  width: 0;
+  transition: width 1s linear;
 }
 
 @media (hover: hover) {
