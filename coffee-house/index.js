@@ -24,28 +24,52 @@ document.addEventListener("DOMContentLoaded", function () {
   const sliderBtnPrev = document.querySelector(".slider-button__prev");
   const totalSlides = document.querySelectorAll(".slider-content").length;
   let currentSlide = 0;
+  let intervalId;
 
-  sliderBtnNext.addEventListener("click", function () {
+  const startAutoPlay = () => {
+    intervalId = setInterval(() => {
+      moveToNextSlide();
+    }, 5000);
+  };
+
+  const stopAutoPlay = () => {
+    clearInterval(intervalId);
+  };
+
+  const moveToNextSlide = () => {
     if (currentSlide < totalSlides - 1) {
-      // Если не последний слайд, сдвигаем на 100%
       currentSlide++;
-      sliderLine.style.marginLeft = `-${currentSlide * 100}%`;
     } else {
-      // Если последний слайд, возвращаемся на начало
       currentSlide = 0;
-      sliderLine.style.marginLeft = "0";
     }
+    updateSlider();
+  };
+
+  const moveToPrevSlide = () => {
+    if (currentSlide > 0) {
+      currentSlide--;
+    } else {
+      currentSlide = totalSlides - 1;
+    }
+    updateSlider();
+  };
+
+  const updateSlider = () => {
+    sliderLine.style.marginLeft = `-${currentSlide * 100}%`;
+  };
+
+  sliderBtnNext.addEventListener("click", () => {
+    moveToNextSlide();
+    stopAutoPlay();
+    startAutoPlay();
   });
 
-  sliderBtnPrev.addEventListener("click", function () {
-    if (currentSlide > 0) {
-      // Если не первый слайд, сдвигаем на 100% назад
-      currentSlide--;
-      sliderLine.style.marginLeft = `-${currentSlide * 100}%`;
-    } else {
-      // Если первый слайд, переходим на последний
-      currentSlide = totalSlides - 1;
-      sliderLine.style.marginLeft = `-${currentSlide * 100}%`;
-    }
+  sliderBtnPrev.addEventListener("click", () => {
+    moveToPrevSlide();
+    stopAutoPlay();
+    startAutoPlay();
   });
+
+  // Начать автоматическое воспроизведение при загрузке страницы
+  startAutoPlay();
 });
