@@ -61,7 +61,7 @@ html {
   background-color: #E1D4C9;
   outline: none;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   margin-right: 0;
 }
 .header-menu__burger-menu {
@@ -74,7 +74,7 @@ html {
   height: 44px;
   background-color: #E1D4C9;
   outline: none;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .header-menu__burger span {
   display: block;
@@ -84,9 +84,9 @@ html {
   width: 16px;
   height: 1.5px;
   background-color: #403F3D;
-  transition: opacity 0.3s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
   will-change: transform;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .header-menu__burger span:nth-child(1) {
   transform: translateY(-4px);
@@ -1031,6 +1031,7 @@ html {
   .navbar-menu {
     display: flex;
     flex-direction: column;
+    gap: 60px;
   }
   .navbar-menu__link {
     font-size: 32px;
