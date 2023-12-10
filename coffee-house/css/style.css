@@ -431,7 +431,7 @@ html {
   animation: progress-up 5s linear;
 }
 .slider-progress.reset {
-  animation: progress-down 1s linear;
+  animation: progress-down 0.5s linear;
 }
 
 @keyframes progress-up {
