@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const sliderBtnNext = document.querySelector(".slider-button__next");
   const sliderBtnPrev = document.querySelector(".slider-button__prev");
   const totalSlides = document.querySelectorAll(".slider-content").length;
-  const progressBars = document.querySelectorAll(".slider-progress");
   let currentSlide = 0;
   let intervalId;
 
@@ -39,37 +38,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const moveToNextSlide = () => {
     if (currentSlide < totalSlides - 1) {
-      updateProgressBars(currentSlide, "reset");
       currentSlide++;
-      updateProgressBars(currentSlide, "active");
     } else {
-      updateProgressBars(currentSlide, "reset");
       currentSlide = 0;
-      updateProgressBars(currentSlide, "active");
     }
     updateSlider();
   };
 
   const moveToPrevSlide = () => {
     if (currentSlide > 0) {
-      updateProgressBars(currentSlide, "reset");
       currentSlide--;
-      updateProgressBars(currentSlide, "active");
     } else {
-      updateProgressBars(currentSlide, "reset");
       currentSlide = totalSlides - 1;
-      updateProgressBars(currentSlide, "active");
     }
     updateSlider();
   };
 
   const updateSlider = () => {
     sliderLine.style.marginLeft = `-${currentSlide * 100}%`;
-  };
-
-  const updateProgressBars = (index, className) => {
-    progressBars[index].classList.remove("active", "reset");
-    progressBars[index].classList.add(className);
   };
 
   sliderBtnNext.addEventListener("click", () => {

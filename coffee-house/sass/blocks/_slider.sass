@@ -49,6 +49,7 @@
         &__img path
             transition: 0.3s ease-in-out
     &-line
+        margin-left: 0
         width: 300%
         transition: 0.5s ease-in-out
     &-content
@@ -114,22 +115,6 @@
         background-color: #665F55
         width: 0
         border-radius: 100px
-        &.active
-            animation: progress-up 5s linear
-        &.reset
-            animation: progress-down 0.5s linear
-@keyframes progress-up
-    from
-        width: 0
-
-    to
-        width: 100%
-@keyframes progress-down
-    from
-        width: 100%
-
-    to
-        width: 0
 @media (hover: hover)
     .slider-button
         &:hover

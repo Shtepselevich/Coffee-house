@@ -353,6 +353,7 @@ html {
   transition: 0.3s ease-in-out;
 }
 .slider-line {
+  margin-left: 0;
   width: 300%;
   transition: 0.5s ease-in-out;
 }
@@ -427,29 +428,7 @@ html {
   width: 0;
   border-radius: 100px;
 }
-.slider-progress.active {
-  animation: progress-up 5s linear;
-}
-.slider-progress.reset {
-  animation: progress-down 0.5s linear;
-}
 
-@keyframes progress-up {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes progress-down {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
-}
 @media (hover: hover) {
   .slider-button:hover {
     background-color: #665F55;
