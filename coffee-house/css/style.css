@@ -428,10 +428,10 @@ html {
   border-radius: 100px;
 }
 .slider-progress.active {
-  animation: progress 5s linear;
+  animation: progress-up 5s linear;
 }
 .slider-progress.reset {
-  animation: progress 1s linear;
+  animation: progress-down 1s linear;
 }
 
 @keyframes progress-up {
