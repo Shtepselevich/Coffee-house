@@ -409,9 +409,6 @@ html {
   width: 40px;
   height: 4px;
 }
-.slider-pagination__button.active span {
-  background: #665F55;
-}
 .slider-pagination__item {
   position: relative;
   display: block;
@@ -426,11 +423,33 @@ html {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #00ff00;
+  background-color: #665F55;
   width: 0;
-  transition: width 1s linear;
+  border-radius: 100px;
+}
+.slider-progress.active {
+  animation: progress 5s linear;
+}
+.slider-progress.reset {
+  animation: progress 1s linear;
 }
 
+@keyframes progress-up {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes progress-down {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
 @media (hover: hover) {
   .slider-button:hover {
     background-color: #665F55;
