@@ -74,24 +74,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Меню
-const menuButtons = document.querySelectorAll(".menu-button");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButtons = document.querySelectorAll(".menu-button");
 
-menuButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const targetId = button.getAttribute("data-target");
+  const menuBlocks = document.querySelectorAll(
+    ".menu-coffee, .menu-tea, .menu-desert"
+  );
 
-    document
-      .querySelectorAll(".menu-coffee, .menu-tea, .menu-dessert")
-      .forEach((menu) => {
-        menu.style.display = "none";
+  menuButtons[0].classList.add("active");
+
+  menuButtons.forEach(function (button, index) {
+    button.addEventListener("click", function () {
+      menuButtons.forEach(function (btn) {
+        btn.classList.remove("active");
       });
 
-    document.getElementById(targetId).style.display = "flex";
+      button.classList.add("active");
 
-    menuButtons.forEach((btn) => {
-      btn.classList.remove("active");
+      menuBlocks.forEach(function (block) {
+        block.style.display = "none";
+      });
+
+      const targetBlockId = button.getAttribute("data-target");
+      const targetBlock = document.getElementById(targetBlockId);
+
+      if (targetBlock) {
+        targetBlock.style.display = "flex";
+      }
     });
-
-    button.classList.add("active");
   });
 });
