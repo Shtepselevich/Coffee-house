@@ -70,6 +70,28 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoPlay();
   });
 
-  // Начать автоматическое воспроизведение при загрузке страницы
   startAutoPlay();
+});
+
+//Меню
+const menuButtons = document.querySelectorAll(".menu-button");
+
+menuButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetId = button.getAttribute("data-target");
+
+    document
+      .querySelectorAll(".menu-coffee, .menu-tea, .menu-dessert")
+      .forEach((menu) => {
+        menu.style.display = "none";
+      });
+
+    document.getElementById(targetId).style.display = "flex";
+
+    menuButtons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+  });
 });
